@@ -1,63 +1,55 @@
-#🎯 QuizMaster — Application Quiz Interactive
+# QuizMaster — Application Quiz Interactive
 
 > Une application quiz interactive développée en HTML, CSS et JavaScript dans le cadre d'un projet collaboratif avec Git & GitHub.
 
-## 📸 Aperçu
+# Overview
 
-L'application propose 10 questions à choix multiples sur les thèmes : HTML, CSS, JavaScript et Git.
+L'application propose 10 questions à choix multiples sur le théme Github
 
-## 🚀 Fonctionnalités
+#  Features 
 
-- ✅ 10 questions à choix multiples (ordre aléatoire)
-- ⏱ Chronomètre en temps réel
-- 📊 Barre de progression
-- 🎨 Feedback visuel immédiat (bonne/mauvaise réponse)
-- 🏆 Score final avec anneau animé
-- 📋 Révision détaillée des réponses
-- 🔄 Possibilité de rejouer
+-  10 questions à choix multiples turiées d'une banque de 30 questions
+-  Chronomètre en temps rée
+-  Barre de progression en temps réel
+-  Feedback visuel immédiat (bonne/mauvaise réponse)
+-  Suivie de score
+-  Révision détaillée des réponses
+-  Possibilité de rejouer
 
-## 🛠 Technologies
+# Technologies 
 
-| Technologie | Usage |
-|-------------|-------|
-| HTML5 | Structure de la page |
-| CSS3 | Design, animations, responsive |
-| JavaScript (vanilla) | Logique du quiz |
-| Git | Gestion de versions |
-| GitHub | Hébergement du dépôt |
+ HTML5 : Structure de la page 
+ CSS3 : Design, animations, responsive 
+ JavaScript (vanilla) : Logique du quiz 
+ Git : Gestion de versions 
+ GitHub : Hébergement du dépôt 
 
-## 📁 Structure du projet
+# Structure du projet
 
-```
+
 quiz-app/
-├── index.html      ← Structure HTML
-├── style.css       ← Design & animations
-├── script.js       ← Logique du quiz
-├── questions.js    ← Banque de questions
-└── README.md       ← Documentation
-```
+── index.html      <- Structure HTML
+── style.css       <- Design et animations
+── script.js       <- Logique du quiz
+── questions.js    <- Banque de questions
+── README.md       <- Document tutoriel et utilisation
 
-## 💻 Lancement
+#  Lancement
 
-Ouvrir `index.html` directement dans un navigateur — aucune installation requise.
+Ouvrir `index.html` directement dans un navigateur  aucune installation requise.
 
-## 👥 Équipe
+# Équipe
 
-| Membre | Tâches |
-|--------|--------|
-| Étudiant 1 | HTML, CSS, Design |
-| Étudiant 2 | JavaScript, Questions |
+Mohamed Khechine 1LIG3 : HTML, CSS, Design 
+Ahmed Rayen Battikh 1LIG3 : JavaScript, Questions 
 
-## 📝 Commandes Git utilisées
+# Commandes Git utilisées
 
-```bash
 git init / git clone
 git add . / git commit -m "message"
 git push / git pull
 git branch / git checkout -b
 git merge / git stash
 git log --oneline --graph
-```
 
----
-*Projet réalisé dans le cadre du cours — Mai 2026*
+
