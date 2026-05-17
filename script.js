@@ -1,6 +1,6 @@
-// script.js — Logique principale du Quiz
+// script.js Logique principale du Quiz
 
-// ─── État du quiz ───
+// État du quiz 
 let currentIndex = 0;
 let score = 0;
 let answered = false;
@@ -10,7 +10,7 @@ let elapsedSeconds = 0;
 let userAnswers = []; // { questionIndex, chosen, correct }
 let shuffledQuestions = [];
 
-// ─── Utilitaires ───
+// Utilitaires
 
 function showScreen(id) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
@@ -25,7 +25,7 @@ function pad(n) {
   return String(n).padStart(2, '0');
 }
 
-// ─── Timer ───
+// Timer
 
 function startTimer() {
   elapsedSeconds = 0;
@@ -48,7 +48,7 @@ function stopTimer() {
   clearInterval(timerInterval);
 }
 
-// ─── Démarrage du quiz ───
+// Démarrage du quiz 
 
 function startQuiz() {
   shuffledQuestions = shuffle(QUESTIONS);
@@ -62,7 +62,7 @@ function startQuiz() {
   renderQuestion();
 }
 
-// ─── Affichage d'une question ───
+// Affichage d'une question
 
 function renderQuestion() {
   answered = false;
@@ -99,7 +99,7 @@ function renderQuestion() {
   });
 }
 
-// ─── Sélection d'une réponse ───
+// Sélection d'une réponse
 
 function selectAnswer(index, clickedBtn) {
   if (answered) return;
@@ -131,7 +131,7 @@ function selectAnswer(index, clickedBtn) {
   }
 }
 
-// ─── Question suivante ───
+// Question suivante
 
 function nextQuestion() {
   currentIndex++;
@@ -142,7 +142,7 @@ function nextQuestion() {
   }
 }
 
-// ─── Résultats ───
+// Résultats 
 
 function showResults() {
   stopTimer();
@@ -152,15 +152,15 @@ function showResults() {
   const wrong = total - score;
   const pct = score / total;
 
-  // Emoji & message
-  let emoji, title, sub;
-  if (pct === 1)        { emoji = '🏆'; title = 'Parfait !';        sub = 'Score parfait ! Tu es un expert.'; }
-  else if (pct >= 0.8)  { emoji = '🌟'; title = 'Excellent !';      sub = 'Tu maîtrises très bien le sujet.'; }
-  else if (pct >= 0.6)  { emoji = '👍'; title = 'Bien joué !';      sub = 'Bon résultat, continue comme ça !'; }
-  else if (pct >= 0.4)  { emoji = '📚'; title = 'Pas mal !';        sub = 'Encore un peu de révision et tu y es.'; }
-  else                   { emoji = '💪'; title = 'Continue !';       sub = 'Ne lâche pas, la pratique paie toujours.'; }
+  // Message
+  let title, sub;
+  if (pct === 1)        { title = 'Parfait !';        sub = 'Score parfait ! Tu es un expert.'; }
+  else if (pct >= 0.8)  { title = 'Excellent !';      sub = 'Tu maîtrises très bien le sujet.'; }
+  else if (pct >= 0.6)  { title = 'Bien joué !';      sub = 'Bon résultat, continue comme ça !'; }
+  else if (pct >= 0.4)  { title = 'Pas mal !';        sub = 'Encore un peu de révision et tu y es.'; }
+  else                   { title = 'Continue !';       sub = 'Ne lâche pas, la pratique paie toujours.'; }
 
-  document.getElementById('result-emoji').textContent = emoji;
+  document.getElementById('result-emoji').textContent = '';
   document.getElementById('result-title').textContent = title;
   document.getElementById('result-sub').textContent = sub;
 
@@ -222,7 +222,7 @@ function reviewAnswers() {
   showScreen('screen-review');
 }
 
-// ─── Navigation ───
+// Navigation 
 
 function goHome() {
   stopTimer();
