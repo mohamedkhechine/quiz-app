@@ -1,4 +1,4 @@
-# 🎯 QuizMaster — Application Quiz Interactive
+#🎯 QuizMaster — Application Quiz Interactive
 
 > Une application quiz interactive développée en HTML, CSS et JavaScript dans le cadre d'un projet collaboratif avec Git & GitHub.
 
